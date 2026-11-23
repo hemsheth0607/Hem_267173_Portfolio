@@ -31,8 +31,7 @@ Add your portfolio screenshot here.
 ## My Projects
 ![My Projects](project.png)
 
-## Portfolio Screenshot
-![Portfolio](portfolio.png
+
 
 ## How to Run
 1. Download or clone this repository.
