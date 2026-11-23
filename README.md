@@ -22,7 +22,17 @@ projects and contact form.
 ## Screenshot
 Add your portfolio screenshot here.
 
-![My Portfolio](screenshots/portfolio.png)
+## Home Page
+![Home Page](home.png)
+
+## About Me
+![About Me](about.png)
+
+## My Projects
+![My Projects](project.png)
+
+## Portfolio Screenshot
+![Portfolio](portfolio.png
 
 ## How to Run
 1. Download or clone this repository.
