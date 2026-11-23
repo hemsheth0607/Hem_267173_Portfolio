@@ -1,0 +1,231 @@
+/* Basic CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.theme-btn {
+    background-color: #38bdf8;
+}
+
+.menu-btn {
+    display: none;
+    background-color: white;
+}
+
+/* Home */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #dbeafe;
+}
+
+#home h1 {
+    font-size: 38px;
+    color: #172554;
+}
+
+#home p {
+    margin: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #172554;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Common Sections */
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #bfdbfe;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #cccccc;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Contact Form */
+form {
+    max-width: 450px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+textarea {
+    height: 120px;
+}
+
+form button {
+    background-color: #172554;
+    color: white;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #2563eb;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #1f2937;
+}
+
+.dark-mode section h2,
+.dark-mode #home h1 {
+    color: #93c5fd;
+}
+
+.dark-mode #home {
+    background-color: #1f2937;
+}
+
+.dark-mode .project-card {
+    background-color: #374151;
+    color: white;
+}
+
+.dark-mode .skill {
+    background-color: #374151;
+    color: white;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header {
+        gap: 12px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .theme-btn {
+        font-size: 12px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
